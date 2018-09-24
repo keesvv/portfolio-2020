@@ -1,0 +1,33 @@
+$linkColor: rgb(52, 119, 243);
+
+.topBar {
+    margin-bottom: 40px;
+}
+
+.nav {
+    padding: 0;
+
+    li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 0 18px;
+        margin: 0 12px;
+        padding-bottom: 3px;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+
+        a {
+            text-decoration: none;
+            border: none;
+            color: $linkColor;
+        }
+    }
+}
+
+#home .home,
+#projects .projects,
+#blog .blog {
+    border-bottom: 2px solid $linkColor;
+}
