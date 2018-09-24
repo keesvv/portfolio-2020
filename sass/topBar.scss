@@ -18,6 +18,10 @@ $linkColor: rgb(52, 119, 243);
             margin-left: 0;
         }
 
+        a:hover {
+            color: lighten($color: $linkColor, $amount: 15);
+        }
+
         a {
             text-decoration: none;
             border: none;
