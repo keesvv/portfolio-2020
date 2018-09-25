@@ -1,0 +1,20 @@
+#repoContainer {
+    .repo {
+        .desc {
+            color: rgb(155, 155, 155);
+            font-weight: bolder;
+
+            span {
+                padding: 5px 20px;
+            }
+
+            span:first-of-type {
+                padding-left: 0;
+            }
+
+            i {
+                margin-right: 6px;
+            }
+        }
+    }
+}
