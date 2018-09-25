@@ -1,5 +1,7 @@
 #repoContainer {
     .repo {
+        transition: opacity 1.5s;
+
         .desc {
             color: rgb(155, 155, 155);
             font-weight: bolder;
