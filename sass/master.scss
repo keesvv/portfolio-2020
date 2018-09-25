@@ -52,6 +52,16 @@ h1 {
 .title {
     font-size: 42px;
     font-family: Inconsolata;
+
+    .subdir {
+        color: rgb(177, 177, 177);
+        font-size: 70%;
+        vertical-align: middle;
+
+        &::before {
+            content: ' > ';
+        }
+    }
 }
 
 .aboutContainer {
