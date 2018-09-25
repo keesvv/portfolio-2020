@@ -9,6 +9,7 @@ function handleRequest() {
         var repo = document.createElement("div");
         var title = document.createElement("h1");
         var titleLink = document.createElement("a");
+        var titleFork = document.createElement("i");
         var desc = document.createElement("p");
         var descContainer = document.createElement("div");
         var language = document.createElement("span");
@@ -22,7 +23,11 @@ function handleRequest() {
         titleLink.href = i.svn_url;
         titleLink.innerText = i.name;
         titleLink.target = "_blank";
+
+        titleFork.classList.add("fas", "fa-code-branch");
+
         title.appendChild(titleLink);
+        if (i.fork) title.appendChild(titleFork);
 
         desc.innerText = i.description;
         language.innerText = i.language;

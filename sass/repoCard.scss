@@ -1,6 +1,13 @@
 #repoContainer {
     .repo {
         transition: opacity 1.5s;
+        
+        h1 i {
+            font-size: 20px;
+            margin-left: 15px;
+            vertical-align: middle;
+            color: darken($color: $defaultLinkColor, $amount: 10);
+        }
 
         .desc {
             color: rgb(155, 155, 155);
