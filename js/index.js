@@ -2,7 +2,8 @@ var repoContainer = document.getElementById("repoContainer");
 
 function handleRequest() {
     var repos = JSON.parse(this.responseText);
-    console.log(repos);
+    var repoItems = [];
+    repos = _.orderBy(repos, ['stargazers_count', 'forks'], 'desc');
 
     repos.forEach(i => {
         var repo = document.createElement("div");
@@ -40,12 +41,22 @@ function handleRequest() {
         descContainer.appendChild(stars);
 
         repo.className = "repo";
+        repo.style.opacity = 0;
         repo.appendChild(title);
         repo.appendChild(desc);
         repo.appendChild(descContainer);
 
+        repoItems.push(repo);
         repoContainer.appendChild(repo);
     });
+
+    let interval = 200;
+    for (let i = 0; i < repoItems.length; i++) {
+        const element = repoItems[i];
+        setTimeout(() => {
+            element.style.opacity = 1;
+        }, interval * i + interval);
+    }
 }
 
 var request = new XMLHttpRequest();
