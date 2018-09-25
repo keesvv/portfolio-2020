@@ -54,6 +54,7 @@ h1 {
     font-family: Inconsolata;
 
     .subdir {
+        animation: blink 1.5s;
         color: rgb(177, 177, 177);
         font-size: 70%;
         vertical-align: middle;
