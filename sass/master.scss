@@ -81,18 +81,23 @@ a {
 }
 
 img.thumb {
-    &-sm {
-        display: block;
-        margin: 10px 0;
-        border-radius: 8px;
+    display: block;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: box-shadow 0.5s, transform 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.596);
+        transform: scale(1.01);
+    }
+
+    &.sm {
         width: 20%;
         min-width: 300px;
     }
 
-    &-lg {
-        display: block;
-        margin: 10px 0;
-        border-radius: 8px;
+    &.lg {
         width: 100%;
         max-width: 900px;
     }
