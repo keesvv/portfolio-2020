@@ -79,3 +79,21 @@ a {
     text-decoration: none;
     border-bottom: 2px dotted $defaultLinkColor;
 }
+
+img.thumb {
+    &-sm {
+        display: block;
+        margin: 10px 0;
+        border-radius: 8px;
+        width: 20%;
+        min-width: 300px;
+    }
+
+    &-lg {
+        display: block;
+        margin: 10px 0;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 900px;
+    }
+}
