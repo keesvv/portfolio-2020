@@ -3,7 +3,7 @@ var repoContainer = document.getElementById("repoContainer");
 function handleRequest() {
     var repos = JSON.parse(this.responseText);
     var repoItems = [];
-    repos = _.orderBy(repos, ['stargazers_count', 'forks'], 'desc');
+    repos = _.orderBy(repos, 'updated_at', 'desc');
 
     repos.forEach(i => {
         var repo = document.createElement("div");
@@ -31,7 +31,7 @@ function handleRequest() {
 
         desc.innerText = i.description;
         language.innerText = i.language;
-        
+
         forkIcon.classList.add("fas", "fa-code-branch");
         forks.appendChild(forkIcon);
         forks.appendChild(document.createTextNode(i.forks));
