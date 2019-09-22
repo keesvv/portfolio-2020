@@ -3,7 +3,9 @@
     <div class="content">
       <img src="@/assets/profile.jpg" class="profilePicture">
       <h1 class="header">
-        <span class="blue">console</span>.<span class="green">log</span>('<span class="black">Hi there! My name is <strong>Kees van Voorthuizen</strong></span>');
+        <span class="blue">console</span>.<span
+              class="green">log</span>('<span
+              class="black">Hi there! My name is <strong>Kees van Voorthuizen</strong></span>');
         <span class="cursor"></span>
       </h1>
       <div class="bio">
