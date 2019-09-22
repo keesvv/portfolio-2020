@@ -1,2 +1,2 @@
 # keesvv.github.io
-My personal blog/website.
+👨‍💻 My personal portfolio/CV/blog website.
