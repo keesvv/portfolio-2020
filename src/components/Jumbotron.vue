@@ -6,6 +6,12 @@
         <span class="blue">console</span>.<span class="green">log</span>('<span class="black">Hi there! My name is <strong>Kees van Voorthuizen</strong></span>');
         <span class="cursor"></span>
       </h1>
+      <div class="bio">
+        Hi there! My name is Kees van Voorthuizen — I'm a 16-years-old Dutch programmer,
+        full stack web developer and CTO & co-founder of <a href="https://tribecamp.com">Tribecamp</a>. I'm a huge fan of modern web frameworks,
+        and I like learning new things. I have 4-5 years of experience with C#.NET,
+        but nowadays I'm really into web development and creating scalable backends with Node.js.
+      </div>
     </div>
   </div>
 </template>
@@ -55,6 +61,13 @@ export default {};
     .black {
       color: black;
     }
+  }
+
+  .bio {
+    width: 80%;
+    max-width: 1100px;
+    font-size: 20px;
+    margin: 25px auto 0;
   }
 
   .cursor {
