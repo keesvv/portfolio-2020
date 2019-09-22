@@ -1,6 +1,7 @@
 <template>
   <div class="jumbotron">
     <div class="content">
+      <img src="@/assets/profile.jpg" class="profilePicture">
       <h1 class="header">
         <span class="blue">console</span>.<span class="green">log</span>('<span class="black">Hi there! My name is <strong>Kees van Voorthuizen</strong></span>');
         <span class="cursor"></span>
@@ -30,6 +31,13 @@ export default {};
   justify-content: center;
   background: rgb(235, 235, 235);
   padding: 150px 20px;
+  text-align: center;
+
+  .profilePicture {
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 15px;
+  }
 
   .header {
     color: rgb(140, 140, 140);
