@@ -1,17 +1,12 @@
 <template>
   <div id="app">
     <jumbotron />
-
-    <div id="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <script>
-import Jumbotron from '@/components/Jumbotron';
+import Jumbotron from '@/components/Jumbotron.vue';
 
 export default {
   components: {
@@ -26,7 +21,7 @@ export default {
 html,
 body {
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 a {
