@@ -21,14 +21,20 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+
 html,
 body {
   margin: 0;
   padding: 0; 
 }
 
+a {
+  color: rgb(60, 154, 241);
+}
+
 #app {
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
 #nav {
