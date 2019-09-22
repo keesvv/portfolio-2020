@@ -1,1 +1,3 @@
-compile.cmd
+node_modules
+*.log
+*.swp
