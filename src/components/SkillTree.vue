@@ -1,17 +1,14 @@
 <template>
   <div class="skillTree">
-    <div class="skill" v-for="(i, index) in skills" :key="index">
-      <div class="progressBar" :style="{
-        width: `${i.rate * 10}%`,
-        background: i.bg,
-        color: i.fg
-      }">
-        <span class="skillName">
-          {{ i.name }}
-          <span v-if="i.related" class="related">
-            > {{ i.related.join(' > ') }}
-          </span>
-        </span>
+    <div class="skill" v-for="(i, index) in skills" :key="index"
+         @mouseover="hoverIndex = index"
+         @mouseleave="hoverIndex = null"
+    >
+      <div class="content">
+        <img v-if="i.img" :src="getImg(i)" alt="Logo" class="logo" :style="{
+          height: i.size
+        }">
+        <span class="name" v-show="hoverIndex === index">{{ i.name }}</span>
       </div>
     </div>
   </div>
@@ -21,104 +18,162 @@
 export default {
   data() {
     return {
+      hoverIndex: null,
       skills: [
         {
           name: 'Vue.js',
           related: ['Vuex', 'Vue Router'],
-          rate: 10,
-          bg: '#09eb94',
+          img: 'vue.png',
         },
         {
           name: 'JavaScript',
           related: ['ES6', 'FP'],
-          rate: 10,
-          bg: '#ffce54',
+          img: 'javascript.png',
+        },
+        {
+          name: 'TypeScript',
+          img: 'typescript.png',
         },
         {
           name: 'Node.js',
-          rate: 10,
-          bg: '#ffce54',
+          img: 'node.png',
         },
         {
           name: 'HTML',
-          rate: 10,
-          bg: '#ff6262',
-          fg: '#ffffff',
+          img: 'html.png',
         },
         {
           name: 'CSS',
           related: ['SCSS'],
-          rate: 9,
-          bg: '#51c1fd',
+          img: 'css.png',
+        },
+        {
+          name: 'Electron',
+          img: 'electron.png',
+        },
+        {
+          name: 'Sass',
+          img: 'sass.png',
         },
         {
           name: 'C#',
-          rate: 8,
-          bg: '#5cbd38',
-          fg: '#ffffff',
+          img: 'csharp.png',
         },
         {
           name: 'Python',
-          rate: 6,
-          bg: '#4195e4',
-          fg: '#ffffff',
+          img: 'python.png',
+        },
+        {
+          name: 'Socket.io',
+          img: 'socketio.svg',
+        },
+        {
+          name: 'Express.js',
+          img: 'expressjs.png',
+          size: '36px',
+        },
+        {
+          name: 'Mongoose',
+          img: 'mongoose.jpg',
+          size: '62px',
         },
         {
           name: 'MongoDB',
           related: ['Mongoose'],
-          rate: 7,
-          bg: 'white',
+          img: 'mongodb.png',
+          size: '28px',
         },
         {
           name: 'Git',
-          rate: 7,
-          bg: 'white',
+          img: 'git.png',
         },
         {
           name: 'Linux',
           related: ['Bash'],
-          rate: 7,
-          bg: 'white',
+          img: 'linux.png',
         },
         {
           name: 'Docker',
-          rate: 6,
-          bg: 'white',
+          img: 'docker.png',
         },
         {
           name: 'Redis',
-          rate: 5,
-          bg: 'white',
+          img: 'redis.png',
+        },
+        {
+          name: 'Webpack',
+          img: 'webpack.png',
+        },
+        {
+          name: 'ESLint',
+          img: 'eslint.png',
+        },
+        {
+          name: 'Mocha',
+          img: 'mocha.png',
+        },
+        {
+          name: 'Stripe',
+          img: 'stripe.png',
+          size: '58px',
+        },
+        {
+          name: 'Twilio SendGrid',
+          img: 'sendgrid.png',
         },
       ],
     };
+  },
+  methods: {
+    getImg(skill) {
+      if (skill.img) {
+        // eslint-disable-next-line
+        return require(`../assets/skills/${skill.img}`);
+      }
+
+      return null;
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
 .skillTree {
-  .skill {
-    margin-top: 8px;
+  width: 40%;
+  display: block;
+  margin: 0 auto;
 
-    &:first-of-type {
-      margin-top: 0;
+  .skill {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 100px;
+    margin: 8px 10px 0;
+    border-radius: 6px;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.10);
+    text-align: center;
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
     }
 
-    .progressBar {
-      border-radius: 20px;
-      text-align: left;
+    .logo {
+      height: 48px;
+    }
+
+    .name {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
       padding: 10px 0;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
-
-      .skillName {
-        margin-left: 12px;
-        font-size: 15px;
-
-        .related {
-          color: rgb(100, 100, 100);
-        }
-      }
+      background: rgba(255, 255, 255, 0.5);
+      border-bottom-left-radius: inherit;
+      border-bottom-right-radius: inherit;
     }
   }
 }
