@@ -23,33 +23,73 @@ export default {
     return {
       skills: [
         {
-          name: 'Vue.js', related: ['Vuex', 'Vue Router'], rate: 10, bg: '#09eb94',
+          name: 'Vue.js',
+          related: ['Vuex', 'Vue Router'],
+          rate: 10,
+          bg: '#09eb94',
         },
         {
-          name: 'JavaScript', related: ['ES6', 'FP'], rate: 10, bg: '#ffce54',
-        },
-        { name: 'Node.js', rate: 10, bg: '#ffce54' },
-        {
-          name: 'HTML', rate: 10, bg: '#ff6262', fg: '#ffffff',
-        },
-        {
-          name: 'CSS', related: ['SCSS'], rate: 9, bg: '#51c1fd',
+          name: 'JavaScript',
+          related: ['ES6', 'FP'],
+          rate: 10,
+          bg: '#ffce54',
         },
         {
-          name: 'C#', rate: 8, bg: '#5cbd38', fg: '#ffffff',
+          name: 'Node.js',
+          rate: 10,
+          bg: '#ffce54',
         },
         {
-          name: 'Python', rate: 6, bg: '#4195e4', fg: '#ffffff',
+          name: 'HTML',
+          rate: 10,
+          bg: '#ff6262',
+          fg: '#ffffff',
         },
         {
-          name: 'MongoDB', related: ['Mongoose'], rate: 7, bg: 'white',
+          name: 'CSS',
+          related: ['SCSS'],
+          rate: 9,
+          bg: '#51c1fd',
         },
-        { name: 'Git', rate: 7, bg: 'white' },
         {
-          name: 'Linux', related: ['Bash'], rate: 7, bg: 'white',
+          name: 'C#',
+          rate: 8,
+          bg: '#5cbd38',
+          fg: '#ffffff',
         },
-        { name: 'Docker', rate: 6, bg: 'white' },
-        { name: 'Redis', rate: 5, bg: 'white' },
+        {
+          name: 'Python',
+          rate: 6,
+          bg: '#4195e4',
+          fg: '#ffffff',
+        },
+        {
+          name: 'MongoDB',
+          related: ['Mongoose'],
+          rate: 7,
+          bg: 'white',
+        },
+        {
+          name: 'Git',
+          rate: 7,
+          bg: 'white',
+        },
+        {
+          name: 'Linux',
+          related: ['Bash'],
+          rate: 7,
+          bg: 'white',
+        },
+        {
+          name: 'Docker',
+          rate: 6,
+          bg: 'white',
+        },
+        {
+          name: 'Redis',
+          rate: 5,
+          bg: 'white',
+        },
       ],
     };
   },
