@@ -26,8 +26,7 @@ export default {
   }
 
   .skillTree {
-    text-align: center;
-    padding: 0 10%;
+    margin: 60px auto 100px;
   }
 }
 </style>
