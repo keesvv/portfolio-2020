@@ -1,14 +1,19 @@
 <template>
   <div class="skillTree">
-    <div class="skill" v-for="(i, index) in skills" :key="index"
-         @mouseover="hoverIndex = index"
-         @mouseleave="hoverIndex = null"
-    >
-      <div class="content">
-        <img v-if="i.img" :src="getImg(i)" alt="Logo" class="logo" :style="{
-          height: i.size
-        }">
-        <span class="name" v-show="hoverIndex === index">{{ i.name }}</span>
+    <div class="skillCategory" v-for="(i, index) in categories" :key="index">
+      <span class="categoryName">{{ i.name }}</span>
+      <div class="listSkills">
+        <div class="skill" v-for="(j, index) in i.skills" :key="index"
+          @mouseover="hoverIndex = index"
+          @mouseleave="hoverIndex = null"
+        >
+          <div class="content">
+            <img v-if="j.img" :src="getImg(j)" alt="Logo" class="logo" :style="{
+              height: j.size
+            }">
+            <span class="name" v-show="hoverIndex === index">{{ j.name }}</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -19,110 +24,208 @@ export default {
   data() {
     return {
       hoverIndex: null,
-      skills: [
-        {
-          name: 'Vue.js',
-          related: ['Vuex', 'Vue Router'],
-          img: 'vue.png',
-        },
-        {
-          name: 'JavaScript',
-          related: ['ES6', 'FP'],
-          img: 'javascript.png',
-        },
-        {
-          name: 'TypeScript',
-          img: 'typescript.png',
-        },
-        {
-          name: 'Node.js',
-          img: 'node.png',
-        },
-        {
-          name: 'HTML',
-          img: 'html.png',
-        },
-        {
-          name: 'CSS',
-          related: ['SCSS'],
-          img: 'css.png',
-        },
-        {
-          name: 'Electron',
-          img: 'electron.png',
-        },
-        {
-          name: 'Sass',
-          img: 'sass.png',
-        },
-        {
-          name: 'C#',
-          img: 'csharp.png',
-        },
-        {
-          name: 'Python',
-          img: 'python.png',
-        },
-        {
-          name: 'Socket.io',
-          img: 'socketio.svg',
-        },
-        {
-          name: 'Express.js',
-          img: 'expressjs.png',
-          size: '36px',
-        },
-        {
-          name: 'Mongoose',
-          img: 'mongoose.jpg',
-          size: '62px',
-        },
-        {
-          name: 'MongoDB',
-          related: ['Mongoose'],
-          img: 'mongodb.png',
-          size: '28px',
-        },
-        {
-          name: 'Git',
-          img: 'git.png',
-        },
-        {
-          name: 'Linux',
-          related: ['Bash'],
-          img: 'linux.png',
-        },
-        {
-          name: 'Docker',
-          img: 'docker.png',
-        },
-        {
-          name: 'Redis',
-          img: 'redis.png',
-        },
-        {
-          name: 'Webpack',
-          img: 'webpack.png',
-        },
-        {
-          name: 'ESLint',
-          img: 'eslint.png',
-        },
-        {
-          name: 'Mocha',
-          img: 'mocha.png',
-        },
-        {
-          name: 'Stripe',
-          img: 'stripe.png',
-          size: '58px',
-        },
-        {
-          name: 'Twilio SendGrid',
-          img: 'sendgrid.png',
-        },
-      ],
+      skills: {
+        languages: [
+          {
+            name: 'JavaScript',
+            img: 'javascript.png',
+          },
+          {
+            name: 'TypeScript',
+            img: 'typescript.png',
+          },
+          {
+            name: 'Node.js',
+            img: 'node.png',
+          },
+          {
+            name: 'HTML',
+            img: 'html.png',
+          },
+          {
+            name: 'CSS',
+            img: 'css.png',
+          },
+          {
+            name: 'Sass',
+            img: 'sass.png',
+          },
+          {
+            name: 'C#',
+            img: 'csharp.png',
+          },
+          {
+            name: 'Python',
+            img: 'python.png',
+          },
+        ],
+        libraries: [
+          {
+            name: 'Vue.js',
+            img: 'vue.png',
+            size: '42px',
+          },
+          {
+            name: 'Electron',
+            img: 'electron.png',
+            size: '42px',
+          },
+          {
+            name: 'Socket.io',
+            img: 'socketio.svg',
+            size: '42px',
+          },
+          {
+            name: 'Express.js',
+            img: 'expressjs.png',
+            size: '36px',
+          },
+          {
+            name: 'Bootstrap',
+            img: 'bootstrap.svg',
+            size: '38px',
+          },
+        ],
+        databases: [
+          {
+            name: 'MongoDB',
+            img: 'mongodb.png',
+            size: '28px',
+          },
+          {
+            name: 'Mongoose',
+            img: 'mongoose.jpg',
+            size: '62px',
+          },
+          {
+            name: 'Redis',
+            img: 'redis.png',
+          },
+        ],
+        cloud: [
+          {
+            name: 'Amazon AWS',
+            img: 'aws.png',
+            size: '35px',
+          },
+        ],
+        qualityAssurance: [
+          {
+            name: 'Mocha',
+            img: 'mocha.png',
+          },
+          {
+            name: 'Chai',
+            img: 'chai.png',
+          },
+        ],
+        ci: [
+          {
+            name: 'CircleCI',
+            img: 'circleci.png',
+            size: '40px',
+          },
+        ],
+        sdks: [
+          {
+            name: 'Stripe',
+            img: 'stripe.png',
+            size: '58px',
+          },
+          {
+            name: 'Twilio SendGrid',
+            img: 'sendgrid.png',
+          },
+          {
+            name: 'Nexmo',
+            img: 'nexmo.png',
+          },
+        ],
+        tools: [
+          {
+            name: 'Git',
+            img: 'git.png',
+          },
+          {
+            name: 'Linux',
+            img: 'linux.png',
+            size: '60px',
+          },
+          {
+            name: 'Docker',
+            img: 'docker.png',
+          },
+          {
+            name: 'Webpack',
+            img: 'webpack.png',
+          },
+          {
+            name: 'ESLint',
+            img: 'eslint.png',
+          },
+          {
+            name: 'Vim',
+            img: 'vim.png',
+          },
+          {
+            name: 'Visual Studio Code',
+            img: 'vscode.png',
+            size: '40px',
+          },
+          {
+            name: 'IntelliJ IDEA',
+            img: 'idea.png',
+            size: '50px',
+          },
+          {
+            name: 'GitHub',
+            img: 'github.png',
+            size: '42px',
+          },
+          {
+            name: 'Bitbucket',
+            img: 'bitbucket.svg',
+            size: '38px',
+          },
+          {
+            name: 'GitLab',
+            img: 'gitlab.svg',
+            size: '70px',
+          },
+          {
+            name: 'Slack',
+            img: 'slack.jpg',
+            size: '40px',
+          },
+          {
+            name: 'Trello',
+            img: 'trello.svg',
+            size: '36px',
+          },
+        ],
+      },
     };
+  },
+  computed: {
+    categories() {
+      return Object.keys(this.skills).map((skill) => {
+        const captions = {
+          languages: 'Languages',
+          libraries: 'Frameworks & Libraries',
+          databases: 'Databases & ORMs',
+          cloud: 'Cloud Computing',
+          qualityAssurance: 'Quality Assurance (QA)',
+          ci: 'Continuous Integration & Deployment (CI/CD)',
+          sdks: 'SDKs',
+          tools: 'Tools',
+        };
+
+        return {
+          name: captions[skill],
+          skills: this.skills[skill],
+        };
+      });
+    },
   },
   methods: {
     getImg(skill) {
@@ -143,15 +246,26 @@ export default {
   display: block;
   margin: 0 auto;
 
+  .skillCategory {
+    margin-bottom: 30px;
+
+    .categoryName {
+      display: block;
+      color: gray;
+      margin-bottom: 8px;
+    }
+  }
+
   .skill {
     display: inline-block;
     position: relative;
     width: 150px;
     height: 100px;
-    margin: 8px 10px 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
     border-radius: 6px;
     padding: 10px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
     text-align: center;
 
     .content {
