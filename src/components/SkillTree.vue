@@ -1,17 +1,21 @@
 <template>
   <div class="skillTree">
-    <div class="skillCategory" v-for="(i, index) in categories" :key="index">
+    <div class="skillCategory" v-for="(i, categoryIndex) in categories" :key="categoryIndex">
       <span class="categoryName">{{ i.name }}</span>
       <div class="listSkills">
-        <div class="skill" v-for="(j, index) in i.skills" :key="index"
-          @mouseover="hoverIndex = index"
+        <div class="skill" v-for="(j, index) in i.skills" :key="`${categoryIndex}-${index}`"
+          @mouseover="hoverIndex = `${categoryIndex}-${index}`"
           @mouseleave="hoverIndex = null"
         >
           <div class="content">
             <img v-if="j.img" :src="getImg(j)" alt="Logo" class="logo" :style="{
               height: j.size
             }">
-            <span class="name" v-show="hoverIndex === index">{{ j.name }}</span>
+            <span class="name"
+                  v-show="hoverIndex === `${categoryIndex}-${index}`"
+            >
+              {{ j.name }}
+            </span>
           </div>
         </div>
       </div>
