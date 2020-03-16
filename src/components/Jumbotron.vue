@@ -33,6 +33,11 @@ export default {};
   color: white;
   padding: 160px 100px;
 
+  @media (max-width: 768px) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
   .header {
     font-size: 80px;
     font-weight: lighter;
@@ -40,7 +45,7 @@ export default {};
 
   .subheader {
     font-size: 35px;
-    width: 500px;
+    max-width: 500px;
     font-weight: lighter;
     margin-bottom: 60px;
   }
