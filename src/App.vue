@@ -28,6 +28,10 @@ a {
   color: rgb(60, 154, 241);
 }
 
+section {
+  padding: 30px 0;
+}
+
 #app {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
