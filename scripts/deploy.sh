@@ -2,7 +2,7 @@
 set -e
 
 npm install
-npm build
+npm run build
 cd dist
 
 git init
