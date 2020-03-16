@@ -1,8 +1,8 @@
 <template>
-  <div class="skillTree">
+  <div class="skillTree container">
     <div class="skillCategory" v-for="(i, categoryIndex) in categories" :key="categoryIndex">
       <span class="categoryName">{{ i.name }}</span>
-      <div class="listSkills">
+      <div class="listSkills row">
         <div class="skill" v-for="(j, index) in i.skills" :key="`${categoryIndex}-${index}`"
           @mouseover="hoverIndex = `${categoryIndex}-${index}`"
           @mouseleave="hoverIndex = null"
@@ -246,12 +246,15 @@ export default {
 
 <style lang="scss" scoped>
 .skillTree {
-  width: 40%;
   display: block;
   margin: 0 auto;
 
   .skillCategory {
     margin-bottom: 30px;
+
+    .listSkills {
+      margin: auto 0;
+    }
 
     .categoryName {
       display: block;
@@ -266,7 +269,7 @@ export default {
     display: inline-block;
     position: relative;
     width: 150px;
-    height: 100px;
+    height: 110px;
     margin-right: 15px;
     margin-bottom: 15px;
     border-radius: $borderRadius;
