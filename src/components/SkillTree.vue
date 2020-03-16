@@ -261,13 +261,15 @@ export default {
   }
 
   .skill {
+    $borderRadius: 6px;
+
     display: inline-block;
     position: relative;
     width: 150px;
     height: 100px;
     margin-right: 15px;
     margin-bottom: 15px;
-    border-radius: 6px;
+    border-radius: $borderRadius;
     padding: 10px 0;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
     text-align: center;
@@ -289,9 +291,10 @@ export default {
       left: 0;
       right: 0;
       padding: 10px 0;
-      background: rgba(255, 255, 255, 0.5);
-      border-bottom-left-radius: inherit;
-      border-bottom-right-radius: inherit;
+      background: white;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
+      border-bottom-left-radius: $borderRadius;
+      border-bottom-right-radius: $borderRadius;
     }
   }
 }
