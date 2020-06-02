@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 set -e
 
-npm install
-npm run build
+yarn install
+yarn build
 cd dist
 
 git init
