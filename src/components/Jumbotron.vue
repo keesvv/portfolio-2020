@@ -8,7 +8,7 @@
         My name is <strong>Kees van Voorthuizen</strong> — I'm a 16-years-old Dutch programmer,
         full stack web developer and CTO & Co-founder of <a href="https://tribecamp.com">Tribecamp</a>.
       </h2>
-      <img src="@/assets/profile.png" class="profilePicture">
+      <img src="@/assets/profile.jpg" class="profilePicture">
     </div>
   </div>
 </template>
