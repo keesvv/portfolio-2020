@@ -16,7 +16,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
 
 html,
 body {
@@ -24,16 +25,21 @@ body {
   padding: 0;
 }
 
+body {
+  background: rgb(248, 248, 248);
+  font-family: 'Nunito', Helvetica, Arial, sans-serif;
+}
+
 a {
   color: rgb(60, 154, 241);
 }
 
-section {
-  padding: 30px 0;
+h1 {
+  font-family: Poppins;
 }
 
-#app {
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
+section {
+  padding: 30px 0;
 }
 
 #nav {

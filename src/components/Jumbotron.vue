@@ -29,8 +29,7 @@ export default {};
 }
 
 .jumbotron {
-  background: rgb(57, 0, 104);
-  color: white;
+  background: white;
   padding: 160px 100px;
 
   @media (max-width: 768px) {
@@ -39,8 +38,7 @@ export default {};
   }
 
   .header {
-    font-size: 80px;
-    font-weight: lighter;
+    font-size: 85px;
   }
 
   .subheader {

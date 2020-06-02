@@ -274,6 +274,7 @@ export default {
     margin-bottom: 15px;
     border-radius: $borderRadius;
     padding: 10px 0;
+    background: white;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
     text-align: center;
 
