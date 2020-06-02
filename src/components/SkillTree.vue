@@ -3,7 +3,7 @@
     <div class="skillCategory" v-for="(i, categoryIndex) in categories" :key="categoryIndex">
       <span class="categoryName">{{ i.name }}</span>
       <div class="listSkills row">
-        <div class="skill" v-for="(j, index) in i.skills" :key="`${categoryIndex}-${index}`"
+        <div class="skill col-sm" v-for="(j, index) in i.skills" :key="`${categoryIndex}-${index}`"
           @mouseover="hoverIndex = `${categoryIndex}-${index}`"
           @mouseleave="hoverIndex = null"
         >
@@ -268,7 +268,7 @@ export default {
 
     display: inline-block;
     position: relative;
-    width: 150px;
+    min-width: 120px;
     height: 110px;
     margin-right: 15px;
     margin-bottom: 15px;

@@ -47,8 +47,7 @@ export default {};
   padding: 160px 100px;
 
   @media (max-width: 768px) {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 80px 40px
   }
 
   .socialLinks {
