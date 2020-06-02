@@ -1,12 +1,26 @@
 <template>
   <div class="jumbotron">
     <div class="content">
+      <div class="socialLinks">
+        <a class="social github" target="_blank" href="https://github.com/keesvv">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="social twitter" target="_blank" href="https://twitter.com/keesvv">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="social linkedin" target="_blank" href="https://www.linkedin.com/in/keesvv">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a class="social instagram" target="_blank" href="https://www.instagram.com/kees.dev">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
       <h1 class="header">
         Hi!
       </h1>
       <h2 class="subheader">
         My name is <strong>Kees van Voorthuizen</strong> — I'm a 16-years-old Dutch programmer,
-        full stack web developer and CTO & Co-founder of <a href="https://tribecamp.com">Tribecamp</a>.
+        full stack web developer and CTO & Co-founder of <a href="https://tribecamp.com" target="_blank">Tribecamp</a>.
       </h2>
       <img src="@/assets/profile.jpg" class="profilePicture">
     </div>
@@ -37,6 +51,16 @@ export default {};
     padding-right: 70px;
   }
 
+  .socialLinks {
+    margin-bottom: 15px;
+
+    .social {
+      color: rgb(120, 120, 120);
+      font-size: 28px;
+      margin-right: 15px;
+    }
+  }
+
   .header {
     font-size: 85px;
   }
@@ -46,6 +70,10 @@ export default {};
     max-width: 500px;
     font-weight: lighter;
     margin-bottom: 60px;
+
+    strong {
+      font-weight: bolder;
+    }
   }
 
   .profilePicture {
