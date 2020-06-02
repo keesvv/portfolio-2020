@@ -19,8 +19,8 @@
         Hi!
       </h1>
       <h2 class="subheader">
-        My name is <strong>Kees van Voorthuizen</strong> — I'm a 16-years-old Dutch programmer,
-        full stack web developer and CTO & Co-founder of <a href="https://tribecamp.com" target="_blank">Tribecamp</a>.
+        My name is <strong>Kees van Voorthuizen</strong> — I'm a 16-years-old Dutch
+        full stack developer and CTO & Co-founder of <a href="https://tribecamp.com" target="_blank">Tribecamp</a>.
       </h2>
       <img src="@/assets/profile.jpg" class="profilePicture">
     </div>
