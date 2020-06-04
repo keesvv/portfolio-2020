@@ -35,7 +35,7 @@ export default {
     font-weight: bolder;
     text-decoration: none;
     font-size: 18px;
-    padding: 2px 15px;
+    padding: 6px 15px;
 
     &.router-link-exact-active {
       border-bottom: 3px solid black;
