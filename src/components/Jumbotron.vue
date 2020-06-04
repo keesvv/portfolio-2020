@@ -69,11 +69,18 @@ export default {};
       color: rgb(120, 120, 120);
       font-size: 28px;
       margin-right: 15px;
+      animation: fadeIn 1.5s backwards;
+
+      &:nth-of-type(1) { animation-delay: 4.2s; }
+      &:nth-of-type(2) { animation-delay: 4.4s; }
+      &:nth-of-type(3) { animation-delay: 4.6s; }
+      &:nth-of-type(4) { animation-delay: 4.8s; }
     }
   }
 
   .header {
     font-size: 85px;
+    animation: fadeIn 1.5s backwards 0.5s;
   }
 
   .subheader {
@@ -81,6 +88,7 @@ export default {};
     max-width: 500px;
     font-weight: lighter;
     margin-bottom: 60px;
+    animation: fadeIn 1.5s backwards 1.5s;
 
     strong {
       font-weight: bolder;
@@ -91,6 +99,7 @@ export default {};
     border-radius: 50%;
     width: 150px;
     margin-bottom: 15px;
+    animation: fadeIn 2s backwards 3s;
   }
 }
 </style>
