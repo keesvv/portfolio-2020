@@ -47,7 +47,19 @@ export default {};
   padding: 160px 100px;
 
   @media (max-width: 768px) {
-    padding: 80px 40px
+    padding: 80px 40px;
+
+    .header {
+      font-size: 72px !important;
+    }
+
+    .subheader {
+      font-size: 28px !important;
+    }
+
+    .socialLinks .social {
+      font-size: 24px !important;
+    }
   }
 
   .socialLinks {
