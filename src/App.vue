@@ -1,16 +1,22 @@
 <template>
   <div id="app">
     <jumbotron />
+    <tab-bar />
+    <h1 class="header">
+      {{ $route.name }}
+    </h1>
     <router-view />
   </div>
 </template>
 
 <script>
 import Jumbotron from '@/components/Jumbotron.vue';
+import TabBar from '@/components/TabBar.vue';
 
 export default {
   components: {
     Jumbotron,
+    TabBar,
   },
 };
 </script>
@@ -58,5 +64,14 @@ section {
       color: #42b983;
     }
   }
+}
+</style>
+
+<style lang="scss" scoped>
+.header {
+  font-weight: bolder;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 45px;
 }
 </style>
