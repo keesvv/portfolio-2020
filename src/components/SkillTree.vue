@@ -89,6 +89,10 @@ export default {
             img: 'bootstrap.svg',
             size: '38px',
           },
+          {
+            name: 'Joi',
+            img: 'joi.png',
+          },
         ],
         databases: [
           {
@@ -104,6 +108,10 @@ export default {
           {
             name: 'Redis',
             img: 'redis.png',
+          },
+          {
+            name: 'PostgreSQL',
+            img: 'postgresql.svg',
           },
         ],
         cloud: [
@@ -121,6 +129,10 @@ export default {
           {
             name: 'Chai',
             img: 'chai.png',
+          },
+          {
+            name: 'Jest',
+            img: 'jest.png',
           },
         ],
         ci: [
