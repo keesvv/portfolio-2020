@@ -218,6 +218,14 @@ export default {
             img: 'trello.svg',
             size: '36px',
           },
+          {
+            name: 'Nextcloud',
+            img: 'nextcloud.png',
+          },
+          {
+            name: 'NGINX',
+            img: 'nginx.svg',
+          },
         ],
       },
     };
