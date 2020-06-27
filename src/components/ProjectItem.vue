@@ -34,7 +34,7 @@ export default {
 
 <style lang="scss" scoped>
 .projectItem {
-  padding-bottom: 40px;
+  padding: 0 10px 40px;
 
   .header {
     font-family: Nunito;
@@ -60,6 +60,10 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 768px) {
+      margin-top: 10px;
+    }
   }
 }
 </style>
