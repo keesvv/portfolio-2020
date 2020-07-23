@@ -1,6 +1,6 @@
 <template>
   <div class="tabBar">
-    <router-link v-for="(i, index) in tabs" :to="i.route" :key="index" class="tab">
+    <router-link v-for="(i, index) in tabs" :to="i.path" :key="index" class="tab">
       {{ i.name }}
     </router-link>
   </div>
@@ -10,16 +10,7 @@
 export default {
   data() {
     return {
-      tabs: [
-        {
-          name: 'Skills',
-          route: '/',
-        },
-        {
-          name: 'Projects',
-          route: '/projects',
-        },
-      ],
+      tabs: this.$router.options.routes,
     };
   },
 };
