@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/keesvv
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://keesvv.nl
+  * I am keesvv (https://keybase.io/keesvv) on keybase.
+  * I have a public key ASCF3xthKTBnIyDV7E7aeWS5DCTnSzOjs5aiarEW3QCKFgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204380b6d8df4421147e9c288b6557813d15f02bfb86fc344ac3cebc78f13c1fb70a",
+      "host": "keybase.io",
+      "kid": "012085df1b612930672320d5ec4eda7964b90c24e74b33a3b396a26ab116dd008a160a",
+      "uid": "7101145f552405a176f2521ba57a9f19",
+      "username": "keesvv"
+    },
+    "merkle_root": {
+      "ctime": 1608717754,
+      "hash": "447bee94b5d4d77a224eb4518aaa81108a95409e42f108324fc1a7697330f8928ed98226f5be4aad9c067e9910e9e10cdcd4dcb3f815fc9c3b20d27ce4240d23",
+      "hash_meta": "b782276a7b9d401d3b46fb79d0bffaeaabd5b08bd5d4e7d807a015d692e3faae",
+      "seqno": 18485061
+    },
+    "service": {
+      "entropy": "TXEEnJbNOlL68oAbc7Lx/hoM",
+      "hostname": "keesvv.nl",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.2"
+  },
+  "ctime": 1608718000,
+  "expire_in": 504576000,
+  "prev": "9c387536db324096a6ce83951772ede2f8be20fbbe84f199532a841077c8a9c5",
+  "seqno": 45,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEghd8bYSkwZyMg1exO2nlkuQwk50szo7OWomqxFt0AihYKp3BheWxvYWTESpcCLcQgnDh1NtsyQJamzoOVF3Lt4vi+IPu+hPGZUyqEEHfIqcXEIDA8++g6ChB0jVIbfqS9iPkaigIWn6jLsK4sc7nl9v1gAgHCo3NpZ8RAb53pC34t/gAAFn2XD8pzNDWRduYYRjkw9b0FU7a7pBHigQ2anJnsJ7ZQw70VSnUKUojJyQPZtabklKjlZ4YRBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPeqUoZqp/OFwhop5L8MaG+o/a3Gp8XBQ3MwZWFuEReqo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/keesvv
+
+==================================================================
