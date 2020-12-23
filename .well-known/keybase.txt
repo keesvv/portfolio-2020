@@ -4,9 +4,9 @@ https://keybase.io/keesvv
 
 I hereby claim:
 
-  * I am an admin of https://keesvv.github.io
+  * I am an admin of https://keesvv.nl
   * I am keesvv (https://keybase.io/keesvv) on keybase.
-  * I have a public key ASB1TnoSi5TwQiDRsFzYs0TPoyZnvL1_eNm2RC49ZBjljQo
+  * I have a public key ASCF3xthKTBnIyDV7E7aeWS5DCTnSzOjs5aiarEW3QCKFgo
 
 To do so, I am signing this object:
 
@@ -15,19 +15,19 @@ To do so, I am signing this object:
     "key": {
       "eldest_kid": "01204380b6d8df4421147e9c288b6557813d15f02bfb86fc344ac3cebc78f13c1fb70a",
       "host": "keybase.io",
-      "kid": "0120754e7a128b94f04220d1b05cd8b344cfa32667bcbd7f78d9b6442e3d6418e58d0a",
+      "kid": "012085df1b612930672320d5ec4eda7964b90c24e74b33a3b396a26ab116dd008a160a",
       "uid": "7101145f552405a176f2521ba57a9f19",
       "username": "keesvv"
     },
     "merkle_root": {
-      "ctime": 1542031246,
-      "hash": "8cc3b19c97dc5a0c9e25f785f9c9245ab09e2d25e19c8c472a5e31d4d3c8475d6bfa93bbd8dfe58aef48cb5bac1a845f76b3efc692e30e8ed64b7198dd44bf36",
-      "hash_meta": "6d318f06ea26e701703aed68e386371bf262f23357365cc4bfb186ee850da172",
-      "seqno": 3938466
+      "ctime": 1608717754,
+      "hash": "447bee94b5d4d77a224eb4518aaa81108a95409e42f108324fc1a7697330f8928ed98226f5be4aad9c067e9910e9e10cdcd4dcb3f815fc9c3b20d27ce4240d23",
+      "hash_meta": "b782276a7b9d401d3b46fb79d0bffaeaabd5b08bd5d4e7d807a015d692e3faae",
+      "seqno": 18485061
     },
     "service": {
-      "entropy": "ZXc153p4Zrs0IHMN5KArCZLO",
-      "hostname": "keesvv.github.io",
+      "entropy": "TXEEnJbNOlL68oAbc7Lx/hoM",
+      "hostname": "keesvv.nl",
       "protocol": "https:"
     },
     "type": "web_service_binding",
@@ -35,18 +35,18 @@ To do so, I am signing this object:
   },
   "client": {
     "name": "keybase.io go client",
-    "version": "2.10.0"
+    "version": "5.5.2"
   },
-  "ctime": 1542031254,
+  "ctime": 1608718000,
   "expire_in": 504576000,
-  "prev": "bc8161d3d0fe98561431c89c3eb03d931689488391528c727dc1bb1fa78b9680",
-  "seqno": 24,
+  "prev": "9c387536db324096a6ce83951772ede2f8be20fbbe84f199532a841077c8a9c5",
+  "seqno": 45,
   "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgdU56EouU8EIg0bBc2LNEz6MmZ7y9f3jZtkQuPWQY5Y0Kp3BheWxvYWTESpcCGMQgvIFh09D+mFYUMcicPrA9kxaJSIORUoxyfcG7H6eLloDEIAbm6le0NhQXCAQDX1eyUgTg5Y0VahY/lvwwxp8QKchGAgHCo3NpZ8RAPLVQ5ZgAiSCOjiRdnmBU36FEn5AFjtTaMkn5cZMVfjUX+d2+6yKWP7OOUmQX9gh9wz/M3dicxygVPibzeUlmAqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBkNRuMsDvMSH3mnNA/4PmMjoOB6SZF+9WwfO4EPE2pjo3RhZ80CAqd2ZXJzaW9uAQ==
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEghd8bYSkwZyMg1exO2nlkuQwk50szo7OWomqxFt0AihYKp3BheWxvYWTESpcCLcQgnDh1NtsyQJamzoOVF3Lt4vi+IPu+hPGZUyqEEHfIqcXEIDA8++g6ChB0jVIbfqS9iPkaigIWn6jLsK4sc7nl9v1gAgHCo3NpZ8RAb53pC34t/gAAFn2XD8pzNDWRduYYRjkw9b0FU7a7pBHigQ2anJnsJ7ZQw70VSnUKUojJyQPZtabklKjlZ4YRBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPeqUoZqp/OFwhop5L8MaG+o/a3Gp8XBQ3MwZWFuEReqo3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
