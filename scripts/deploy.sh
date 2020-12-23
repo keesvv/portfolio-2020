@@ -5,7 +5,7 @@ yarn install
 yarn build
 cd dist
 
-cp -av ../.well-known .
+cp -a ../.well-known ../_config.yml .
 echo 'keesvv.nl' > CNAME
 
 git init
