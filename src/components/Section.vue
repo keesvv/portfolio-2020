@@ -61,5 +61,6 @@ export default class Section extends Vue {
 
 .desc {
   margin: 12px 0 0;
+  max-width: 800px;
 }
 </style>
