@@ -13,15 +13,16 @@ export default class Navbar extends Vue {}
 
 <style lang="scss" scoped>
 .navbar {
-  // text-align: right;
-  padding: 0 var(--base-padding);
+  --link-padding: 15px;
+
+  padding: 0 calc(var(--content-padding) - var(--link-padding));
 }
 
 .nav-link {
   display: inline-block;
   color: black;
   font-weight: bold;
-  padding: 30px 15px;
+  padding: 30px var(--link-padding);
 
   &:first-of-type {
     margin-left: 0;

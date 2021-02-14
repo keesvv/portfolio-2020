@@ -43,6 +43,8 @@ a {
 
 :root {
   --base-padding: 10%;
+  --text-padding: 80px;
+  --content-padding: calc(var(--base-padding) + var(--text-padding));
 
   @media only screen and (max-width: 600px) {
     --base-padding: 5%;

@@ -29,9 +29,8 @@ export default class Jumbotron extends Vue {}
 
 <style lang="scss" scoped>
 .jumbotron {
-  // text-align: center;
   background: rgb(248, 248, 248);
-  padding: 130px calc(var(--base-padding) + 80px);
+  padding: 130px var(--content-padding);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,7 +48,7 @@ img {
 h1 {
   font-family: Poppins;
   font-size: 82px;
-  margin: 40px 0 20px;
+  margin: 40px 0 20px -5px;
 }
 
 h2 {

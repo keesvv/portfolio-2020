@@ -34,7 +34,7 @@ export default class Section extends Vue {
 
 <style lang="scss" scoped>
 .section {
-  padding: 70px 80px;
+  padding: 70px var(--text-padding);
   border-radius: 15px;
   background-color: var(--bg-color);
 }
