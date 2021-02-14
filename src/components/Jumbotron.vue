@@ -6,9 +6,7 @@
         My name is Kees van Voorthuizen — I'm a 17-year-old passionate and
         self-taught developer from The Netherlands.
       </h2>
-      <h3>
-        Feel free to contact me!
-      </h3>
+      <h3>Feel free to <a href="mailto:me@keesvv.nl">contact me</a>!</h3>
       <socials />
     </div>
     <div class="right">
