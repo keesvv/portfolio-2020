@@ -1,12 +1,19 @@
 <template>
   <div class="jumbotron">
-    <img src="@/assets/me.jpg" alt="Me" />
-    <h1>Hi! 👋</h1>
-    <h2>
-      My name is Kees van Voorthuizen — I'm a 17-years-old passionate and
-      self-taught full stack developer from The Netherlands.
-    </h2>
-    <socials />
+    <div class="left">
+      <h1>Hi! 👋</h1>
+      <h2>
+        My name is Kees van Voorthuizen — I'm a 17-year-old passionate and
+        self-taught developer from The Netherlands.
+      </h2>
+      <h3>
+        Feel free to contact me!
+      </h3>
+      <socials />
+    </div>
+    <div class="right">
+      <img src="@/assets/me.jpg" alt="Me" />
+    </div>
   </div>
 </template>
 
@@ -24,9 +31,12 @@ export default class Jumbotron extends Vue {}
 
 <style lang="scss" scoped>
 .jumbotron {
-  text-align: center;
-  background: rgb(245, 245, 245);
-  padding: 60px 5%;
+  // text-align: center;
+  background: rgb(248, 248, 248);
+  padding: 130px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 img {
@@ -36,12 +46,18 @@ img {
 
 h1 {
   font-family: Poppins;
-  font-size: 48px;
+  font-size: 82px;
   margin: 40px 0 20px;
 }
 
 h2 {
   font-size: 24px;
   margin: 0 0 25px;
+  max-width: 540px;
+}
+
+h3 {
+  font-size: 20px;
+  color: gray;
 }
 </style>

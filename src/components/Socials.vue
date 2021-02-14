@@ -29,9 +29,13 @@ export default class Socials extends Vue {}
 .social {
   margin: 0 8px;
 
+  &:first-of-type {
+    margin-left: 0;
+  }
+
   i {
     color: rgb(180, 180, 180);
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 </style>
