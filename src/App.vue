@@ -16,6 +16,7 @@ export default class App extends Vue {}
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/fontawesome.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/brands.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/regular.min.css");
 
 html,
 body {
