@@ -34,4 +34,12 @@ a {
   color: rgb(49, 179, 255);
   text-decoration: none;
 }
+
+:root {
+  --base-padding: 10%;
+
+  @media only screen and (max-width: 600px) {
+    --base-padding: 5%;
+  }
+}
 </style>

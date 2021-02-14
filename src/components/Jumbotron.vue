@@ -31,10 +31,14 @@ export default class Jumbotron extends Vue {}
 .jumbotron {
   // text-align: center;
   background: rgb(248, 248, 248);
-  padding: 130px calc(10% + 80px);
+  padding: 130px calc(var(--base-padding) + 80px);
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media only screen and (max-width: 600px) {
+    padding: 130px calc(var(--base-padding) + 20px);
+  }
 }
 
 img {

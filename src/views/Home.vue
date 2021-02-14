@@ -32,6 +32,6 @@ export default class Home extends Vue {}
 
 <style lang="scss" scoped>
 .sections {
-  padding: 60px 10%;
+  padding: 60px var(--base-padding);
 }
 </style>
