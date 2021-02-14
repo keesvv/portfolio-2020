@@ -4,13 +4,14 @@
     <div class="sections">
       <Section
         caption="About me"
-        description="
-        I am an ordinary Dutch guy living in The Hague, The Netherlands. // TODOf
-        "
         icon="far fa-user"
         icon-color="rgba(66, 135, 245, 0.25)"
         bg-color="rgba(66, 135, 245, 0.15)"
-      />
+      >
+        <template v-slot:description>
+          I am an ordinary Dutch guy living in The Hague, The Netherlands.
+        </template>
+      </Section>
     </div>
   </div>
 </template>

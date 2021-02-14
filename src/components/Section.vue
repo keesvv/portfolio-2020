@@ -7,7 +7,9 @@
       <i :class="icon"></i>
     </div>
     <h1 class="caption">{{ caption }}</h1>
-    <p class="desc">{{ description }}</p>
+    <p class="desc">
+      <slot name="description" />
+    </p>
   </div>
 </template>
 
@@ -18,9 +20,6 @@ import { Vue, Component, Prop } from "vue-property-decorator";
 export default class Section extends Vue {
   @Prop({ required: true })
   caption!: string;
-
-  @Prop({ required: true })
-  description!: string;
 
   @Prop({ required: true })
   icon!: string;

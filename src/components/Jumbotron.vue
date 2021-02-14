@@ -31,7 +31,7 @@ export default class Jumbotron extends Vue {}
 .jumbotron {
   // text-align: center;
   background: rgb(248, 248, 248);
-  padding: 130px 10%;
+  padding: 130px calc(10% + 80px);
   display: flex;
   align-items: center;
   justify-content: space-between;
