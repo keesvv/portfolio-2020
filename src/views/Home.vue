@@ -3,6 +3,7 @@
     <jumbotron />
     <div class="sections">
       <Section
+        class="section"
         caption="About me"
         icon="far fa-user"
         icon-color="rgba(66, 135, 245, 0.25)"
@@ -16,6 +17,21 @@
           addition, I have a strong passion for languages &mdash; not only
           programming languages, but also human languages. I'm also fairly
           detail-oriented.
+        </template>
+      </Section>
+      <Section
+        class="section"
+        caption="Skills"
+        icon="fas fa-project-diagram"
+        icon-color="rgba(245, 203, 66, 0.25)"
+        bg-color="rgba(245, 203, 66, 0.15)"
+        :right="true"
+      >
+        <template v-slot:description>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Reprehenderit, tempore eius ipsam porro nostrum laborum ullam ab
+          eveniet recusandae, sequi unde. Officia sit illo, harum cumque
+          blanditiis porro excepturi quae.
         </template>
       </Section>
     </div>
@@ -39,5 +55,13 @@ export default class Home extends Vue {}
 <style lang="scss" scoped>
 .sections {
   padding: 60px var(--base-padding);
+
+  .section {
+    margin-bottom: 50px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }
 </style>
