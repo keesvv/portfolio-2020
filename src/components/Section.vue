@@ -1,15 +1,24 @@
 <template>
   <div
     class="section"
-    :style="{ '--icon-color': iconColor, '--bg-color': bgColor }"
+    :class="{ right }"
+    :style="{
+      '--icon-color': iconColor,
+      '--bg-color': bgColor,
+    }"
   >
-    <div class="icon">
-      <i :class="icon"></i>
+    <div class="left">
+      <div class="icon">
+        <i :class="icon"></i>
+      </div>
+      <h1 class="caption">{{ caption }}</h1>
+      <p class="desc">
+        <slot name="description" />
+      </p>
     </div>
-    <h1 class="caption">{{ caption }}</h1>
-    <p class="desc">
-      <slot name="description" />
-    </p>
+    <div class="right">
+      <div class="imagePlaceholder"></div>
+    </div>
   </div>
 </template>
 
@@ -29,6 +38,9 @@ export default class Section extends Vue {
 
   @Prop({ required: true })
   bgColor!: string;
+
+  @Prop()
+  right!: boolean;
 }
 </script>
 
@@ -37,6 +49,13 @@ export default class Section extends Vue {
   padding: 70px var(--text-padding);
   border-radius: 15px;
   background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &.right {
+    flex-direction: row-reverse;
+  }
 }
 
 .icon {
@@ -64,5 +83,12 @@ export default class Section extends Vue {
   max-width: 800px;
   font-size: 18px;
   color: rgb(100, 100, 100);
+}
+
+// TODO: remove
+.imagePlaceholder {
+  background: red;
+  width: 500px;
+  height: 300px;
 }
 </style>
